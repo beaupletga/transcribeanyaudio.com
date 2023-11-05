@@ -1,0 +1,5 @@
+.env
+nginx.conf
+whisper.cpp/
+node_modules/
+dist/
