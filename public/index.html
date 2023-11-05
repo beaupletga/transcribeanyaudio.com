@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcribe audio to text</title>
+    <meta name="description"
+        content="Effortlessly transcribe English audio files (mp3, wav...) and receive accurate text transcripts, including lyrics. Try our audio-to-text transcription service now!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <layout class="column-layout">
+        <div class="column-layout-item header row-layout">
+            <div class="row-layout-item">
+                <h1 style="text-align: center;">Transcribe audio to text</h1>
+                <h4 style="text-align: center;">
+                    Only English is supported. Only mp3 and wav formats are supported. Only audio less than 10mb is
+                    supported.
+                </h4>
+            </div>
+        </div>
+        <div class="column-layout-item row-layout">
+            <div class="row-layout-item">
+                <form id="form" class="drop-container" enctype="multipart/form-data">
+                    <span class="drop-title">Drop file here</span>
+                    or
+                    <input type="file" id="audioFile" name="audioFile" accept="audio/*">
+                </form>
+
+            </div>
+        </div>
+        <div class="column-layout-item row-layout" id="error-container">
+
+        </div>
+        <div class="column-layout-item row-layout">
+            <button class="copy-button" onclick="navigator.clipboard.writeText
+            (document.getElementById('transcript-text').innerText);">Copy Transcript</button>
+        </div>
+        <div class="column-layout-item row-layout" id="transcript">
+            <div class="row-layout-item" id="transcript-text">
+                The transcript will be displayed here
+            </div>
+        </div>
+    </layout>
+</body>
+
+</html>
+
+<script type="text/javascript" src="script.js"></script>

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "pretty": true,
+    "noEmitOnError": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "newLine": "lf",
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true,
+    "useDefineForClassFields": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "lib": [
+      "ES2023"
+    ],
+    "outDir": "dist",
+    "target": "ES2022",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "inlineSources": true,
+    "noEmitHelpers": true,
+    "importHelpers": true
+  }
+}
